@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include <algorithm>
 
 using namespace std;
@@ -7,10 +6,11 @@ using namespace std;
 int main(void)
 {
     string input = "";
-    long long thirtyN;
+    int thirtyN = 0;
     cin >> input;
     sort(input.rbegin(),input.rend());
-    thirtyN = stoll(input);
+    for(int i = 0; i< input.length();i++)
+        thirtyN += input[i] - '0';
     if(input[input.size()-1] == '0' & thirtyN % 3 == 0)
         cout << input << endl;
     else
