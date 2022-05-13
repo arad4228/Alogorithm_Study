@@ -8,7 +8,6 @@ int teleport(int x, int y,int move)
         return;
     if(move == 0)
         teleport(x+1,y,move+1);
-    move = ;
 }
 
 int main(void)
