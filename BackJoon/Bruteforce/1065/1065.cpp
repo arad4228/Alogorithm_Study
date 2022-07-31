@@ -24,6 +24,7 @@ int main(void)
     int N;
     cin >> N;
     int count = 0;
+    // 전수조사
     for(int i=1; i <= N; i++)
         if(checker(i))
             count++;
